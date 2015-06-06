@@ -17,7 +17,7 @@ gulp.task('concat-js', function(){
 
 gulp.task('deploy', function(){
     gulp.src('QA/Todd/production.js')
-    .pipe(gulp.dest('production/Weather Dot Com'))
+    .pipe(gulp.dest('production'))
 });
 
 gulp.task('default', function(){
