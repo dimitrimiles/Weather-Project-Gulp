@@ -10,7 +10,7 @@ gulp.task('jshint', function(){
     .pipe(jshint.reporter('default', { verbose: true }));
 });
 
-//Concats all of the JavaScript files approved by QA into a single file
+//Concats all of the JavaScript files approved by QA into a single file and moves it to ready for prod
 gulp.task('concat-js', function(){
     gulp.src('QA/Todd/*.js')
     .pipe(concat("production.js"))
