@@ -14,12 +14,12 @@ gulp.task('jshint', function(){
 gulp.task('concat-js', function(){
     gulp.src('QA/Todd/*.js')
     .pipe(concat("production.js"))
-    .pipe(gulp.dest('QA/Todd'))
+    .pipe(gulp.dest('ready for prod'))
 });
 
 //Deploys the compiled file to the production environment
 gulp.task('deploy', function(){
-    gulp.src('QA/Todd/production.js')
+    gulp.src('ready for prod/production.js')
     .pipe(gulp.dest('production'))
 });
 
