@@ -23,10 +23,6 @@ gulp.task('deploy', function(){
     .pipe(gulp.dest('production'))
 });
 
- gulp.watch('QA/Todd/*.js', function() {
-    gulp.run('jshint', 'concat-js');
-});
-
 gulp.task('default', function(){
 	console.log('Test');
 
